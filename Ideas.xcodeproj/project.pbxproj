@@ -14,6 +14,11 @@
 		3F7F68D31CD912B300C6B66D /* NotesListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7F68D21CD912B300C6B66D /* NotesListTableViewController.swift */; };
 		3F7F68D51CD925B200C6B66D /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7F68D41CD925B200C6B66D /* Notes.swift */; };
 		3F7F68D71CD92A4500C6B66D /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7F68D61CD92A4500C6B66D /* NoteDetailViewController.swift */; };
+		3F7F68DD1CDA62B900C6B66D /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7F68D91CDA62B900C6B66D /* Fabric.framework */; };
+		3F7F68DE1CDA62B900C6B66D /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7F68DA1CDA62B900C6B66D /* DigitsKit.framework */; };
+		3F7F68DF1CDA62B900C6B66D /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3F7F68DB1CDA62B900C6B66D /* DigitsKitResources.bundle */; };
+		3F7F68E01CDA62B900C6B66D /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F7F68DC1CDA62B900C6B66D /* TwitterCore.framework */; };
+		3F7F68E41CDA828B00C6B66D /* IdeasHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F7F68E31CDA828B00C6B66D /* IdeasHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +28,14 @@
 		3F7F68C51CD9084000C6B66D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F7F68C81CD9084000C6B66D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F7F68CA1CD9084000C6B66D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F7F68D21CD912B300C6B66D /* NotesListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesListTableViewController.swift; sourceTree = "<group>"; };
+		3F7F68D21CD912B300C6B66D /* NotesListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotesListTableViewController.swift; path = ../NotesListTableViewController.swift; sourceTree = "<group>"; };
 		3F7F68D41CD925B200C6B66D /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
-		3F7F68D61CD92A4500C6B66D /* NoteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		3F7F68D61CD92A4500C6B66D /* NoteDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteDetailViewController.swift; path = ../NoteDetailViewController.swift; sourceTree = "<group>"; };
+		3F7F68D91CDA62B900C6B66D /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		3F7F68DA1CDA62B900C6B66D /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
+		3F7F68DB1CDA62B900C6B66D /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
+		3F7F68DC1CDA62B900C6B66D /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		3F7F68E31CDA828B00C6B66D /* IdeasHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IdeasHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +43,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7F68DD1CDA62B900C6B66D /* Fabric.framework in Frameworks */,
+				3F7F68E01CDA62B900C6B66D /* TwitterCore.framework in Frameworks */,
+				3F7F68DE1CDA62B900C6B66D /* DigitsKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,10 +55,12 @@
 		3F7F68B21CD9084000C6B66D = {
 			isa = PBXGroup;
 			children = (
-				3F7F68D21CD912B300C6B66D /* NotesListTableViewController.swift */,
-				3F7F68D61CD92A4500C6B66D /* NoteDetailViewController.swift */,
 				3F7F68BD1CD9084000C6B66D /* Ideas */,
 				3F7F68BC1CD9084000C6B66D /* Products */,
+				3F7F68D91CDA62B900C6B66D /* Fabric.framework */,
+				3F7F68DA1CDA62B900C6B66D /* DigitsKit.framework */,
+				3F7F68DB1CDA62B900C6B66D /* DigitsKitResources.bundle */,
+				3F7F68DC1CDA62B900C6B66D /* TwitterCore.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,7 +77,10 @@
 			children = (
 				3F7F68BE1CD9084000C6B66D /* AppDelegate.swift */,
 				3F7F68C21CD9084000C6B66D /* Main.storyboard */,
+				3F7F68E31CDA828B00C6B66D /* IdeasHomeViewController.swift */,
 				3F7F68D41CD925B200C6B66D /* Notes.swift */,
+				3F7F68D61CD92A4500C6B66D /* NoteDetailViewController.swift */,
+				3F7F68D21CD912B300C6B66D /* NotesListTableViewController.swift */,
 				3F7F68C51CD9084000C6B66D /* Assets.xcassets */,
 				3F7F68C71CD9084000C6B66D /* LaunchScreen.storyboard */,
 				3F7F68CA1CD9084000C6B66D /* Info.plist */,
@@ -80,6 +98,7 @@
 				3F7F68B71CD9084000C6B66D /* Sources */,
 				3F7F68B81CD9084000C6B66D /* Frameworks */,
 				3F7F68B91CD9084000C6B66D /* Resources */,
+				3F7F68D81CDA625B00C6B66D /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -128,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F7F68DF1CDA62B900C6B66D /* DigitsKitResources.bundle in Resources */,
 				3F7F68C91CD9084000C6B66D /* LaunchScreen.storyboard in Resources */,
 				3F7F68C61CD9084000C6B66D /* Assets.xcassets in Resources */,
 				3F7F68C41CD9084000C6B66D /* Main.storyboard in Resources */,
@@ -135,6 +155,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F7F68D81CDA625B00C6B66D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 13c089aeba041cb684f34e94e48e0e5368d5b2c6 82df37823b2334997357aa0da2b3f3a139b1fa48d2900982e6ab7ce845ddd133";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F7F68B71CD9084000C6B66D /* Sources */ = {
@@ -144,6 +180,7 @@
 				3F7F68BF1CD9084000C6B66D /* AppDelegate.swift in Sources */,
 				3F7F68D71CD92A4500C6B66D /* NoteDetailViewController.swift in Sources */,
 				3F7F68D31CD912B300C6B66D /* NotesListTableViewController.swift in Sources */,
+				3F7F68E41CDA828B00C6B66D /* IdeasHomeViewController.swift in Sources */,
 				3F7F68D51CD925B200C6B66D /* Notes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +294,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Ideas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.shp.Ideas;
@@ -268,6 +309,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Ideas/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.shp.Ideas;
@@ -294,6 +339,7 @@
 				3F7F68CF1CD9084000C6B66D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

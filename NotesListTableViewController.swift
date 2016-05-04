@@ -12,7 +12,7 @@ class NotesListTableViewController: UITableViewController {
 
     var notes: [Note] = []    
     
-    required init?(coder aDecoder: NSCoder) {
+   required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         let note1 = Note()
@@ -33,7 +33,11 @@ class NotesListTableViewController: UITableViewController {
     
     }
     
-    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        tableView.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,7 +58,7 @@ class NotesListTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 3
+        return 1
     }
     
 
@@ -69,15 +73,33 @@ class NotesListTableViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+        notes.removeAtIndex(indexPath.row)
+        tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+    }
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let noteDetailViewController = segue.destinationViewController as! NoteDetailViewController
-        let selectedIndexPath = tableView.indexPathForSelectedRow!
-        noteDetailViewController.note = notes[selectedIndexPath.row]
+        
+        if segue.identifier! == "showNote" {
+            
+            let noteDetailViewController = segue.destinationViewController as! NoteDetailViewController
+            let selectedIndexPath = tableView.indexPathForSelectedRow!
+            //noteDetailViewController.note = notes[selectedIndexPath!.row]
+            
+        } else if segue.identifier! == "addNote" {
+            
+            let note = Note()
+            notes.append(note)
+            let noteDetailViewController = segue.destinationViewController as! NoteDetailViewController
+            noteDetailViewController.note = note
+        }
     }
+    
+    
     /*
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("reuseIdentifier", forIndexPath: indexPath)
